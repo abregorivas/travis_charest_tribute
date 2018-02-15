@@ -83,17 +83,13 @@ module.exports = {
       {
         enforce: 'pre',
         test: /\.js$/,
-        loaders: [
-          {
-            loader: 'standard-loader',
-            options: {
-              error: false,
-              snazzy: true,
-              parser: 'babel-eslint'
-            }
-          }
-        ],
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules|bower_components)/,
+        loader: 'eslint-loader'
+      },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
       }
     ]
   },
