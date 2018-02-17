@@ -3,9 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "browserslist": ["> 1%", "ie > 9"],
+  "browserslist": [
+    "> 1%",
+    "ie > 9"
+  ],
   "babel": {
-    "presets": ["env"]
+    "presets": [
+      "env"
+    ]
   },
   "engines": {
     "node": ">=6.11.1"
@@ -31,7 +36,8 @@
     "build": "webpack --config webpack.prod.js"
   },
   "dependencies": {
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
